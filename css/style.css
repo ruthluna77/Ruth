@@ -3,30 +3,41 @@ body {
     margin: 0;
     padding: 0;
 }
-h1,h2,h3,h4,h5,h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Source Serif Pro', serif;
 }
 
-header{
+header {
     background: url(../images/ejercicio1.jpg) no-repeat center;
     background-size: 243%;
 }
-#header{
+
+#header {
     width: 90%;
     max-width: 1010px;
     margin: 0 auto;
     display: grid;
     grid-template: 41px 5em 280px /1fr;
     line-height: 1em;
-	padding-bottom: 5em;
-    text-align: left;
+    padding-bottom: 5em;
 }
+
+#header > section:nth-child(2) {
+    text-align: right;
 }
-#beneficio{
+
+#beneficio {
     text-align: center;
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }
-h1{
+
+h1 {
     color: white;
     text-align: right;
     font-size: 30px;
@@ -34,73 +45,85 @@ h1{
     width: 100%;
     font-weight: 700;
 }
-h2{
+
+h2 {
     text-align: center;
     font-size: 46px;
 }
-h5{
+
+h5 {
     text-align: center;
     font-size: 35px;
     line-height: 1em;
     width: 100%;
     font-weight: 700;
 }
-h3{
+
+h3 {
     text-align: center;
-    font-size: 30px;  
-    width: 200%;
+    font-size: 30px;
     line-height: 1em;
     grid-template: none;
 }
 
 .button {
-	background-color: white;
-    position: relative
-    color: aqua;
-	border-radius: 50px;
-	border: 0px solid;
-	font-size: 12px;
-	padding: 1px 31px;
-	margin-bottom: 10px;
+    background-color: white;
+    position: relative color: aqua;
+    border-radius: 50px;
+    border: 0px solid;
+    font-size: 12px;
+    padding: 1px 31px;
+    margin-bottom: 10px;
     box-shadow: 3px 3px 5px;
+
 }
+
 button {
-	height: 40px;
-	min-height: 20px;
-	width: 145px;
-	background-color: aqua;
-	border: solid rgba(255, 255, 255, 1) 2px;
-	border-radius: 30px 30px 30px 30px;
-	font-weight: 700;
-	font-size: 18px;
-	color: black;
-	cursor: pointer !important;
+    height: 40px;
+    min-height: 20px;
+    width: 145px;
+    background-color: aqua;
+    border: solid rgba(255, 255, 255, 1) 2px;
+    border-radius: 30px 30px 30px 30px;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    cursor: pointer !important;
     box-shadow: 3px 3px 5px #00000000;
     text-align: center;
 }
+
+#header > section.text-hero > div {
+    text-align: right;
+}
+
 button:hover {
-	color: white;
-	background-color: rgba(50, 50, 50, 1);
-	border-color: transparent;
+    color: white;
+    background-color: rgba(50, 50, 50, 1);
+    border-color: transparent;
 }
+
 #beneficios > .ventaja > img {
-	width: 8%;
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 2%;
-	max-width: 26px;
+    width: 8%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2%;
+    max-width: 26px;
 }
+
 .beneficios img {
-    width:100px;
-    border-radius:50%;
+    width: 100px;
+    border-radius: 50%;
     background: white;
 }
+
 .beneficio img {
-    width:103px;
-    height:102px;
-    border-radius:150px;
+    width: 103px;
+    height: 102px;
+    border-radius: 150px;
 }
-#beneficios{
+
+#beneficios {
     background-color: #22F3F1;
     color: white;
     box-sizing: content-box;
@@ -110,15 +133,18 @@ button:hover {
     text-align: center;
     box-sizing: border-box;
     padding: 10px;
-	}
+}
+
 #beneficios p {
     width: auto;
-    
+
 }
-#beneficios h2{
+
+#beneficios h2 {
     grid-column: 1 / 3;
 }
-#beneficio{
+
+#beneficio {
     background-color: white;
     color: black;
     box-sizing: content-box;
@@ -129,218 +155,151 @@ button:hover {
     box-sizing: border-box;
     width: auto;
     padding: 10px;
-	}
-body > section:nth-child(4) > p{
+}
+
+body > section:nth-child(4) > p {
     margin-left: 5%;
 }
+
 form {
-	height: auto;
-	justify-content: center;
+    height: auto;
+    justify-content: center;
     display: block;
     width: 90%;
     margin: 0 auto;
 }
 
 input {
-	width: 100%;
-	height: 50px;
-	border-radius: 6px;
-	border-width: 1px;
-	background-color: rgba(240, 255, 255, 1);
-	box-sizing: border-box !important;
-	color: #00A6FF;
-	border-style: solid;
-	border-color: rgba(198, 226, 247, 1);
-	padding: 10px;
-	margin: 8px 0px;
-	text-overflow: ellipsis;
-	display: grid;
-	font-weight: 700;
-	font-size: 14px/1.4em;
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    border-width: 1px;
+    background-color: rgba(240, 255, 255, 1);
+    box-sizing: border-box !important;
+    color: #00A6FF;
+    border-style: solid;
+    border-color: rgba(198, 226, 247, 1);
+    padding: 10px;
+    margin: 8px 0px;
+    text-overflow: ellipsis;
+    display: grid;
+    font-weight: 700;
+    font-size: 14px/1.4em;
     background: black;
 }
 
 footer {
-	background: #232323;
-	width: 100%;
-	color: white;
-	margin-top: 6em;
-	font-size: 14px;
-	font-weight: 100;
-	line-height: 1.5em;
-	padding-bottom: 4em;
+    background: #232323;
+    width: 100%;
+    color: white;
+    margin-top: 6em;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.5em;
+    padding-bottom: 4em;
 }
 
 footer .direccion {
-	display: block;
-	max-width: 1020px;
-	margin: 0 auto;
-	width: 90%;
+    display: block;
+    max-width: 1020px;
+    margin: 0 auto;
+    width: 90%;
 }
 
 footer img {
-	width: 90%;
-	max-width: 170px;
-	text-align: left;
+    width: 90%;
+    max-width: 170px;
+    text-align: left;
 }
 
 footer > div > section:nth-child(3) > p {
-	font-size: 16px;
-	font-weight: 400;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 footer .fa-facebook,
 footer .fa-twitter,
 footer .fa-youtube,
 footer .fa-instagram {
-	font-size: 45px;
-	margin: 5px;
+    font-size: 45px;
+    margin: 5px;
 }
 
-footer a{
-	color: white;
+footer a {
+    color: white;
 }
 
 .redes {
-	text-align: center;
+    text-align: center;
 }
 
-#copyright{
-	text-align: center;
-	font-size: 15px;
-	font-weight: 100;
-	padding: 1.2em;
+#copyright {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 1.2em;
 }
 
 @media screen and (min-width: 768px) {
 
-	/*aqui inician los estilos de tablet*/
-     max-width: 120px;
-    @media screen and (min-width:10px);
-    
-	footer .direccion {
-		display: grid;
-		grid-template: 6em 1fr /50% 50%;
-	}
-
-	.direccion img {
-		grid-column-start: 1;
-		grid-column-end: 3;
-	}
-
-	#direccion {
-		border-right: 2px solid grey;
-	}
-    
-    #header{
-    width: 100%;
-    max-width: 700px;
-    display: block;
-    background: 13%;
-           }
-.logo1 {
-		width: 80%;
-		margin: 0em auto;
-        margin-left: 9em;
-
-	}
-
-	.logo2 {
-		width: 150%;
-		margin: 0em auto;
-	}
+    /*aqui inician los estilos de tablet*/
     #header {
-		display: grid;
-		grid-template: 1fr/ 1fr 2fr 1fr
-	}
+        grid-template: 100px 1fr/ 50% 50%;
+    }
 
-	h1 {
-		display: grid;
-		width: 80%;
-		font-size: 40px;
-		font-weight: 700;
-		line-height: 1.2em;
-		color: white;
-		text-align: left;
-		margin-top: 50%;
-	}
+    .text-hero {
+        grid-column: 1/3;
+    }
+
+    .logo1 {
+        text-align: right;
+        justify-items: end;
+    }
+
     form {
-	height: auto;
-	justify-content: center;
-    display: block;
-    width: 50%;
-    margin: 9 auto;
-}
-    body > section:nth-child(4) > p{
-    margin-left: 35%;
-    line-height: normal;
-}
-    h5{
-    line-height: 0em;
+        height: auto;
+        justify-content: center;
+        display: block;
+        width: 50%;
+        margin: 9 auto;
+    }
 
+    body > section:nth-child(4) > p {
+        margin-left: 35%;
+        line-height: normal;
+    }
+
+    /*aqui terminan los estilos de tablet*/
 }
 
-	/*aqui terminan los estilos de tablet*/
-}
 
 @media screen and (min-width: 1024px) {
-	/*aqui inician los estilos de laptop*/
 
+    /*aqui inician los estilos de laptop*/
     header {
-	background-size: cover;
-}
-    .logo1 {
-	width: 80%;
-	margin:auto ;
-	display: block;
-    
-}
+        background-size: cover;
+    }
 
-.logo2 {
-	width: 170%;
-	margin: 0 auto;
-	display: block;
-}
     h1 {
-	width: 150%;
-	font-size: 37px;
-	font-weight: 700;
-	line-height: 1.2em;
-	color: white;
-	text-align: left;
-}
-   
-    #beneficios{
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1.2em;
+
+    }
+
+    .text-hero {
+        justify-self: end;
+        width: 50%;
+        text-align: right;
+    }
+ #beneficios, #beneficio{
         display:grid;
-        grid-template: 0em 1fr 1fr  / 1fr 1fr 1fr 1fr;
+        grid-template: 135px 1fr  / 1fr 1fr 1fr 1fr;
     }
-    #beneficios h2{
+     #beneficios h2, #beneficio > h3{
         grid-column: 1/5;
-        grid-row: 1/3;
-       width: auto;
     }
-     #beneficio h3{
-        grid-column: 1/5;
-        grid-row: 1/3;
-        width: auto;
-    }
-   
-    #beneficio{
-    display: grid;
-    grid-template: 0em 1fr 1fr/ 1fr 1fr 1fr 1fr;
     
-    }
-    form {
-	height: auto;
-	justify-content: center;
-    display: block;
-    width: 20%;
-    margin: 9 auto;
-    }
-      body > section:nth-child(4) > p{
-    margin-left: 40%;
-    line-height: normal;
-}
-   
-	/*aqui terminan los estilos de laptop*/
+
+    /*aqui terminan los estilos de laptop*/
 }
