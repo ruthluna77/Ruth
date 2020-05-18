@@ -299,7 +299,13 @@ footer a {
      #beneficios h2, #beneficio > h3{
         grid-column: 1/5;
     }
-    
+    form {
+	height: auto;
+	justify-content: center;
+    display: block;
+    width: 40%;
+    margin: 9 auto;
+    }
 
     /*aqui terminan los estilos de laptop*/
 }
